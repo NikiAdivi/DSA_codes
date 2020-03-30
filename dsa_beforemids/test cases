@@ -1,0 +1,24 @@
+void main (){
+long long int i, j,n,c; float x[1000000], y[1000000];
+
+n=100000;c=0;
+x[0]=23;
+y[0]=31;
+for (i=1;i<n;++i){
+x[i]=x[i-1]+i+rand()%2534;
+y[i]=y[i-1]+i+rand()%3232;
+
+}
+printf("%d\n",c);
+
+c=0;
+
+x[0]=23736274;
+y[0]=31431324;
+for (i=1;i<n;++i){
+x[i]=x[i-1]-i-rand()%2534;
+y[i]=y[i-1]-i-rand()%3232;
+}
+printf("%d\n",c);
+
+}
